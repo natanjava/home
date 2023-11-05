@@ -9,14 +9,48 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-/* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px;background: #222;}
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 120px}
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+	body, h1,h2,h3,h4,h5,h6 {
+		font-family: "Montserrat", sans-serif
+	}
+	.w3-row-padding img {
+		margin-bottom: 12px
+	}
+	/* Set the width of the sidebar to 120px */
+	.w3-sidebar {
+		width: 120px;background: #222;
+	}
+	/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+	#main {
+		margin-left: 120px
+	}
+	/* Remove margins from "page content" on small screens */
+	@media only screen and (max-width: 600px) {
+		#main {
+			margin-left: 0
+		}
+	}
+	/* Link with blakc backgroung*/
+	a {
+	    text-decoration: none; /* Remove o sublinhado */
+	    color: grey; /* Cor do texto normal */
+	    transition: color 0.3s, background-color 0.3s; /* Adiciona uma transição suave nas cores */
+	}
+	
+	/* Estilizando o link quando o mouse passa por cima */
+	a:hover {
+	    color: black; /* Cor do texto ao passar o mouse */
+	    background-color: white; /* Cor de fundo ao passar o mouse */
+	}
+	p {
+		text-align: justify;
+		color: grey;	
+	}
+	ul {
+    	margin-left: -30px; /* Espaçamento à esquerda para afastar o marcador do texto */
+  	}
+  	li {
+    	margin-bottom: 5px; /* Adicione o espaço desejado entre os itens de lista */
+    }
 </style>
 </head>
 <body class="w3-black">
@@ -29,11 +63,11 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   -->
   <a href="#home" class="w3-bar-item w3-button w3-padding-large w3-black">
     <i class="fa fa-home w3-xxlarge"></i>
-    <p>HOME</p>
+    <p style="text-align: center">HOME</p>
   </a>
   <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-user w3-xxlarge"></i>
-    <p>ABOUT</p>
+    <p>ABOUT ME</p>
   </a>
   <a href="#portfolio" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-eye w3-xxlarge"></i>
@@ -41,7 +75,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   </a>
   <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-envelope w3-xxlarge"></i>
-    <p>CONTACT</p>
+    <p style="text-align: center">CONTACT</p>
   </a>
 </nav>
 
@@ -50,7 +84,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
     <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
     <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" style="width:25% !important">PORTFOLIO</a>
     <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
   </div>
 </div>
@@ -59,139 +93,83 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <div class="w3-padding-large" id="main">
   <!-- Header/Home -->
   <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Natanael Bonfim.</h1>
-    <p>JAVA DEVELOPER</p>
-    <img src="images/user2.jpg" alt="profile" class="w3-image" width="400" height="600" style="border-radius: 35% 20%;">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Natanael Bonfim</h1>
+    <h4>JAVA FULLSTACK DEVELOPER</h4><br>
+    <img src="images/user2.jpg" alt="profile" class="w3-image" width="300" height="500" style="border-radius: 35% 20%;">
   </header>
 
   <!-- About Section -->
   <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey">My Name</h2>
+    <h2 class="w3-text-light-grey">About me</h2>
     <hr style="width:200px" class="w3-opacity">
-    <p>THIS PAGE IS BEING BUILT. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    <p>
+    <ul>
+	  <li>Versatile Java developer with a bachelor's degree in economics</li>
+	  <li>Responsible, proactive, resilient, and reliable person with an agile mindset</li>
+	  <li>Constantly looking for new knowledge and improving my own skills: I am continually developing my portfolio and  
+	      looking for the next training in the IT field</li>
+	  <li>Curious, creative and critical – qualities essential for a software developer to find innovative solutions to any challenge</li>
+	  <li>Always strive to include different perspectives in the work: customer orientation is at the top of my list - at the same time, 
+	  	  through my studies in economics, I have learned to always take the cost-benefit calculation for the company into account</li>
+	  <li>Some years of practical experience in the area of software development as a working student and freelance developer, 
+	      especially with Java, databases and wed-sites development.</li>
+	  <li>Determined to put my German skills into practice in my new adopted home of Germany after completing my C1 level German course last year</li>
+	  <li>Looking for a job as a full-stack or back-end Java developer in an innovative company</li>
+	  <br>
+	  Click <i><a href="images/Natanael-Bonfim-Lebenslauf.pdf" target="_blank">here</a></i> to download my CV.
+	</ul>
+      
     </p>
     <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
-    <p class="w3-wide">HTML/CSS/Javascript</p>
+
+    <p class="w3-wide">Java EE</p>
     <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+      <div class="w3-dark-grey" style="height:28px;width:75%"></div>
     </div>
-    <p class="w3-wide">Java</p>
+    
+    <p class="w3-wide">Spring MVC</p>
     <div class="w3-white">
       <div class="w3-dark-grey" style="height:28px;width:85%"></div>
     </div>
-    <p class="w3-wide">Relational Database</p>
+
+    <p class="w3-wide">HTML/CSS/Javascript</p>
     <div class="w3-white">
       <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+    </div>
+
+    <p class="w3-wide">SQL & Relational Database</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:70%"></div>
     </div><br>
     
-    <!-- 
-    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">11+</span><br>
-        Partners
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">55+</span><br>
-        Projects Done
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">89+</span><br>
-        Happy Clients
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">150+</span><br>
-        Meetings
-      </div>
-    </div>
-
-    <button class="w3-button w3-light-grey w3-padding-large w3-section">
-      <i class="fa fa-download"></i> Download Resume
-    </button>
-     -->
+    <p class="w3-wide">VS Code & Eclipse IDE </p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+    </div><br>
     
-    <!-- Grid for pricing tables 
-    <h3 class="w3-padding-16 w3-text-light-grey">My Price</h3>
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half w3-margin-bottom">
-        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
-          <li class="w3-padding-16">Web Design</li>
-          <li class="w3-padding-16">Photography</li>
-          <li class="w3-padding-16">5GB Storage</li>
-          <li class="w3-padding-16">Mail Support</li>
-          <li class="w3-padding-16">
-            <h2>$ 10</h2>
-            <span class="w3-opacity">per month</span>
-          </li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
-          </li>
-        </ul>
-      </div>
-
-      <div class="w3-half">
-        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
-          <li class="w3-padding-16">Web Design</li>
-          <li class="w3-padding-16">Photography</li>
-          <li class="w3-padding-16">50GB Storage</li>
-          <li class="w3-padding-16">Endless Support</li>
-          <li class="w3-padding-16">
-            <h2>$ 25</h2>
-            <span class="w3-opacity">per month</span>
-          </li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
-          </li>
-        </ul>
-      </div>
-    </div>
-    -->
-    <!-- End Grid/Pricing tables 
-    -->
-    
-    <!-- Testimonials 
-    <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>  
-    <img src="/w3images/bandmember.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-margin-right">Chris Fox.</span> CEO at Mighty Schools.</p>
-    <p>John Doe saved us from a web disaster.</p><br>
-    
-    <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-margin-right">Rebecca Flex.</span> CEO at Company.</p>
-    <p>No one is better than John Doe.</p>
-    -->
+   
   </div>
-  <!-- End About Section -->
   
   <!-- Portfolio Section -->
   <div class="w3-padding-64 w3-content" id="portfolio">
     <h2 class="w3-text-light-grey">My portfolio</h2>
     <hr style="width:200px" class="w3-opacity">
-    <p>THIS PAGE IS BEING BUILT. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    <p>
+    	
+    </p>
+   
+    <p>
+		Through my <i><a href="http://www.natanaelbonfim.com/portfolio/" target="_blank">Portfolio</a></i>, 
+		I seek to bring together concepts that are important in the routine of a Fullstack Java developer, 
+		through different Frameworks that connect Frontend and Backend. These concepts cover object-relational mapping, object-oriented development, 
+		data validation, connection to databases and SQL language, security, code versioning, creation of API's and user-friendly interfaces, 
+		access control for different types of users, generation of reports , dependency injection, deployment on a Cloud server (AWS) and other important concepts, 
+		which made me ready to pursue a new challenge: joining a team of developers, engineers, infrastructure professionals in a Software Development Company.
+		Click <i><a href="http://www.natanaelbonfim.com/portfolio/" target="_blank">here</a></i> and visit my Protfolio.
     </p> 
 
 
-    <!-- Grid for photos 
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half">
-        <img src="/w3images/wedding.jpg" style="width:100%">
-        <img src="/w3images/rocks.jpg" style="width:100%">
-        <img src="/w3images/sailboat.jpg" style="width:100%">
-      </div>
 
-      <div class="w3-half">
-        <img src="/w3images/underwater.jpg" style="width:100%">
-        <img src="/w3images/chef.jpg" style="width:100%">
-        <img src="/w3images/wedding.jpg" style="width:100%">
-        <img src="/w3images/p6.jpg" style="width:100%">
-      </div>
-
-    </div>
-    -->
   </div>
   <!-- End Portfolio Section -->
 
@@ -207,43 +185,13 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
       -->
       <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: natan.nbg@gmail.com</p>
       <p><img src="images/in.jpg" alt="boy" class="w3-image" width="30" height="30" style="margin-left:0.8%; margin-top:0.8%;">
-       		<span style="margin-left:2.5%;"><a href="https://www.linkedin.com/" target="_blank" class="w3-hover-text-green">Say hello</a></span>
+       		<span style="margin-left:2.5%;"><a href="https://www.linkedin.com/in/natanael-bonfim/" target="_blank" class="w3-hover-text-green">Say hello</a></span>
       </p>
     </div><br>
     
-    <!-- 
-    <p>Let's get in touch. Send me a message:</p>
-
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
-      <p>
-        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </p>
-    </form>
-     -->
   </div>
-  <!-- End Contact Section -->
   
-    <!-- Footer 
-  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-  </footer>
-    -->
-  <!-- End footer -->
-
 </div>
-<!-- END PAGE CONTENT -->
 
 </body>
 </html>
