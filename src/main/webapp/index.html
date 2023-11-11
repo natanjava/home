@@ -1,197 +1,214 @@
 <!DOCTYPE html>
 <html>
-<head> 
-<title>Home Page</title>
-<link rel="icon" type="image/jpg" href="images/nb.jpg">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-	body, h1,h2,h3,h4,h5,h6 {
-		font-family: "Montserrat", sans-serif
-	}
-	.w3-row-padding img {
-		margin-bottom: 12px
-	}
-	/* Set the width of the sidebar to 120px */
-	.w3-sidebar {
-		width: 120px;background: #222;
-	}
-	/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-	#main {
-		margin-left: 120px
-	}
-	/* Remove margins from "page content" on small screens */
-	@media only screen and (max-width: 600px) {
-		#main {
-			margin-left: 0
-		}
-	}
-	/* Link with blakc backgroung*/
-	a {
-	    text-decoration: none; /* Remove o sublinhado */
-	    color: grey; /* Cor do texto normal */
-	    transition: color 0.3s, background-color 0.3s; /* Adiciona uma transição suave nas cores */
-	}
+	<head> 
+		<title>Home Page</title>
+		<link rel="icon" type="image/jpg" href="images/nb.jpg">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		<style>
+			body, h1,h2,h3,h4,h5,h6 {
+				font-family: "Montserrat", sans-serif
+			}
+			.w3-row-padding img {
+				margin-bottom: 12px
+			}
+			/* Set the width of the sidebar to 120px */
+			.w3-sidebar {
+				width: 120px;background: #222;
+			}
+			/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+			#main {
+				margin-left: 120px
+			}
+			/* Remove margins from "page content" on small screens */
+			@media only screen and (max-width: 600px) {
+				#main {
+					margin-left: 0
+				}
+			}
+			/* Link with blakc backgroung*/
+			a {
+			    text-decoration: none; /* Remove o sublinhado */
+			    color: grey; /* Cor do texto normal */
+			    transition: color 0.3s, background-color 0.3s; /* Adiciona uma transição suave nas cores */
+			}
+			
+			/* Estilizando o link quando o mouse passa por cima */
+			a:hover {
+			    color: black; /* Cor do texto ao passar o mouse */
+			    background-color: white; /* Cor de fundo ao passar o mouse */
+			}
+			p {
+				text-align: justify;
+				color: grey;	
+			}
+			ul {
+		    	margin-left: -30px; /* Espaçamento à esquerda para afastar o marcador do texto */
+		  	}
+		  	li {
+		    	margin-bottom: 5px; /* Adicione o espaço desejado entre os itens de lista */
+		    }
+		</style>
+	</head>
+
+	<body class="w3-black">
 	
-	/* Estilizando o link quando o mouse passa por cima */
-	a:hover {
-	    color: black; /* Cor do texto ao passar o mouse */
-	    background-color: white; /* Cor de fundo ao passar o mouse */
-	}
-	p {
-		text-align: justify;
-		color: grey;	
-	}
-	ul {
-    	margin-left: -30px; /* Espaçamento à esquerda para afastar o marcador do texto */
-  	}
-  	li {
-    	margin-bottom: 5px; /* Adicione o espaço desejado entre os itens de lista */
-    }
-</style>
-</head>
-<body class="w3-black">
-
-<!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-  <!-- Avatar image in top left corner -->
-  <!--
-  <img src="images/user2.jpg" style="width:100%">
-  -->
-  <a href="#home" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-home w3-xxlarge"></i>
-    <p style="text-align: center">HOME</p>
-  </a>
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-user w3-xxlarge"></i>
-    <p>ABOUT ME</p>
-  </a>
-  <a href="#portfolio" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-eye w3-xxlarge"></i>
-    <p>PORTFOLIO</p>
-  </a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-envelope w3-xxlarge"></i>
-    <p style="text-align: center">CONTACT</p>
-  </a>
-</nav>
-
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
-<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button" style="width:25% !important">PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
-  </div>
-</div>
-
-<!-- Page Content -->
-<div class="w3-padding-large" id="main">
-  <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Natanael Bonfim</h1>
-    <h4>JAVA FULLSTACK DEVELOPER</h4><br>
-    <img src="images/user2.jpg" alt="profile" class="w3-image" width="300" height="500" style="border-radius: 35% 20%;">
-  </header>
-
-  <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey">About me</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p>
-    <ul>
-	  <li>Versatile Java developer with a bachelor's degree in economics</li>
-	  <li>Responsible, proactive, resilient, and reliable person with an agile mindset</li>
-	  <li>Constantly looking for new knowledge and improving my own skills: I am continually developing my portfolio and  
-	      looking for the next training in the IT field</li>
-	  <li>Curious, creative and critical – qualities essential for a software developer to find innovative solutions to any challenge</li>
-	  <li>Always strive to include different perspectives in the work: customer orientation is at the top of my list - at the same time, 
-	  	  through my studies in economics, I have learned to always take the cost-benefit calculation for the company into account</li>
-	  <li>Some years of practical experience in the area of software development as a working student and freelance developer, 
-	      especially with Java, databases and wed-sites development.</li>
-	  <li>Determined to put my German skills into practice in my new adopted home of Germany after completing my C1 level German course last year</li>
-	  <li>Looking for a job as a full-stack or back-end Java developer in an innovative company</li>
-	  <br>
-	  Click <i><a href="images/Natanael-Bonfim-Lebenslauf.pdf" target="_blank">here</a></i> to download my CV.
-	</ul>
-      
-    </p>
-    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
-
-    <p class="w3-wide">Java EE</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:75%"></div>
-    </div>
-    
-    <p class="w3-wide">Spring MVC</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
-    </div>
-
-    <p class="w3-wide">HTML/CSS/Javascript</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
-    </div>
-
-    <p class="w3-wide">SQL & Relational Database</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:70%"></div>
-    </div><br>
-    
-    <p class="w3-wide">VS Code & Eclipse IDE </p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
-    </div><br>
-    
-   
-  </div>
-  
-  <!-- Portfolio Section -->
-  <div class="w3-padding-64 w3-content" id="portfolio">
-    <h2 class="w3-text-light-grey">My portfolio</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p>
-    	
-    </p>
-   
-    <p>
-		Through my <i><a href="http://www.natanaelbonfim.com/portfolio/" target="_blank">Portfolio</a></i>, 
-		I seek to bring together concepts that are important in the routine of a Fullstack Java developer, 
-		through different Frameworks that connect Frontend and Backend. These concepts cover object-relational mapping, object-oriented development, 
-		data validation, connection to databases and SQL language, security, code versioning, creation of API's and user-friendly interfaces, 
-		access control for different types of users, generation of reports , dependency injection, deployment on a Cloud server (AWS) and other important concepts, 
-		which made me ready to pursue a new challenge: joining a team of developers, engineers, infrastructure professionals in a Software Development Company.
-		Click <i><a href="http://www.natanaelbonfim.com/portfolio/" target="_blank">here</a></i> and visit my Protfolio.
-    </p> 
-
-
-
-  </div>
-  <!-- End Portfolio Section -->
-
-  <!-- Contact Section -->
-  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-    <h2 class="w3-text-light-grey">Contact Me</h2>
-    <hr style="width:200px" class="w3-opacity">
-
-    <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Mainz, DE</p>
-       <!--
-      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
-      -->
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: natan.nbg@gmail.com</p>
-      <p><img src="images/in.jpg" alt="boy" class="w3-image" width="30" height="30" style="margin-left:0.8%; margin-top:0.8%;">
-       		<span style="margin-left:2.5%;"><a href="https://www.linkedin.com/in/natanael-bonfim/" target="_blank" class="w3-hover-text-green">Say hello</a></span>
-      </p>
-    </div><br>
-    
-  </div>
-  
-</div>
-
-</body>
+	<!-- Icon Bar (Sidebar - hidden on small screens) -->
+	<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+	  <!-- Avatar image in top left corner -->
+	  <!--
+	  <img src="images/user2.jpg" style="width:100%">
+	  -->
+	  <a href="#home" class="w3-bar-item w3-button w3-padding-large w3-black">
+	    <i class="fa fa-home w3-xxlarge"></i>
+	    <p style="text-align: center">HOME</p>
+	  </a>
+	  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+	    <i class="fa fa-user w3-xxlarge"></i>
+	    <p>ABOUT ME</p>
+	  </a>
+	  <a href="#portfolio" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+	    <i class="fa fa-eye w3-xxlarge"></i>
+	    <p>PORTFOLIO</p>
+	  </a>
+	  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+	    <i class="fa fa-envelope w3-xxlarge"></i>
+	    <p style="text-align: center">CONTACT</p>
+	  </a>
+	</nav>
+	
+	<!-- Navbar on small screens (Hidden on medium and large screens) -->
+	<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+	  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+	    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+	    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+	    <a href="#portfolio" class="w3-bar-item w3-button" style="width:25% !important">PORTFOLIO</a>
+	    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+	  </div>
+	</div>
+	
+	<!-- Page Content -->
+	<div class="w3-padding-large" id="main">
+	  <!-- Header/Home -->
+	  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+	    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Natanael Bonfim</h1>
+	    <h4>JAVA FULLSTACK DEVELOPER</h4><br>
+	    <img src="images/user2.jpg" alt="profile" class="w3-image" width="300" height="500" style="border-radius: 35% 20%;">
+	  </header>
+	
+	  <!-- About Section -->
+	  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+	    <h2 class="w3-text-light-grey">About me</h2>
+	    <hr style="width:200px" class="w3-opacity">
+	    <p>
+	    <ul>
+		  <li>Versatile Java developer with a bachelor's degree in economics</li>
+		  <li>Responsible, proactive, resilient, and reliable person with an agile mindset</li>
+		  <li>Constantly looking for new knowledge and improving my own skills: I am continually developing my portfolio and  
+		      looking for the next training in the IT field</li>
+		  <li>Curious, creative and critical – qualities essential for a software developer to find innovative solutions to any challenge</li>
+		  <li>Always strive to include different perspectives in the work: customer orientation is at the top of my list - at the same time, 
+		  	  through my studies in economics, I have learned to always take the cost-benefit calculation for the company into account</li>
+		  <li>Some years of practical experience in the area of software development as a working student and freelance developer, 
+		      especially with Java, databases and wed-sites development.</li>
+		  <li>Determined to put my German skills into practice in my new adopted home of Germany after completing my C1 level German course last year</li>
+		  <li>Looking for a job as a full-stack or back-end Java developer in an innovative company</li>
+		  <br>
+		  Click <i><a href="images/Natanael-Bonfim-Lebenslauf.pdf" target="_blank" data-title="A new page" >here</a></i> to download my CV.
+		</ul>
+	     <br>
+	    </p>
+	    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+	
+	    <p class="w3-wide">Java EE</p>
+	    <div class="w3-white">
+	      <div class="w3-dark-grey" style="height:28px;width:75%"></div>
+	    </div>
+	    
+	    <p class="w3-wide">Spring MVC</p>
+	    <div class="w3-white">
+	      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+	    </div>
+	
+	    <p class="w3-wide">HTML/CSS/Javascript</p>
+	    <div class="w3-white">
+	      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+	    </div>
+	
+	    <p class="w3-wide">SQL & Relational Database</p>
+	    <div class="w3-white">
+	      <div class="w3-dark-grey" style="height:28px;width:70%"></div>
+	    </div>    
+	    
+	    <p class="w3-wide">VS Code & Eclipse IDE & Eclipse STS  </p>
+	    <div class="w3-white">
+	      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+	    </div>
+	    
+	    <p class="w3-wide">PHP</p>
+	    <div class="w3-white">
+	      <div class="w3-dark-grey" style="height:28px;width:50%"></div>
+	    </div>
+	    
+	    <p class="w3-wide">Scrum</p>
+	    <div class="w3-white">
+	      <div class="w3-dark-grey" style="height:28px;width:60%"></div>
+	    </div>
+	    
+	    <br>
+	    
+	   
+	  </div>
+	  
+	  <!-- Portfolio Section -->
+	  <div class="w3-padding-64 w3-content" id="portfolio">
+	    <h2 class="w3-text-light-grey">My portfolio</h2>
+	    <hr style="width:200px" class="w3-opacity">
+	    <p>
+	    	
+	    </p>
+	   
+	    <p>
+			Through my <i><a href="http://www.natanaelbonfim.com/portfolio/" target="_blank">Portfolio</a></i>, 
+			I seek to bring together concepts that are important in the routine of a Fullstack Developer, 
+			through different Frameworks that connect Frontend and Backend. These concepts cover object-relational mapping, object-oriented development, 
+			data validation, connection to databases and SQL language, security, code versioning, creation of API's and user-friendly interfaces, 
+			access control for different types of users, generation of reports , dependency injection, deployment on a Cloud server (AWS) and other important concepts, 
+			which made me ready to pursue a new challenge: joining a team of developers, engineers, infrastructure professionals in a Software Development Company.
+			Click <i><a href="http://www.natanaelbonfim.com/portfolio/" target="_blank">here</a></i> and visit my Protfolio.
+	    </p> 
+	
+	
+	
+	  </div>
+	  <!-- End Portfolio Section -->
+	
+	  <!-- Contact Section -->
+	  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+	    <h2 class="w3-text-light-grey">Contact Me</h2>
+	    <hr style="width:200px" class="w3-opacity">
+	
+	    <div class="w3-section">
+	      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Mainz, DE</p>
+	       <!--
+	      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
+	      -->
+	      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> natan.nbg@gmail.com</p>
+	      <p><img src="images/in.jpg" alt="boy" class="w3-image" width="30" height="30" style="margin-left:0.8%; margin-top:0.8%;">
+	       		<span style="margin-left:2.5%;"><a href="https://www.linkedin.com/in/natanael-bonfim/" target="_blank" class="w3-hover-text-green">Say hello</a></span>
+	      </p>
+	      <p><img src="images/git.jpg" alt="boy" class="w3-image" width="30" height="30" style="margin-left:0.8%; margin-top:0.8%;">
+	       		<span style="margin-left:2.5%;"><a href="https://github.com/natanjava/" target="_blank" class="w3-hover-text-green">GitHub</a></span>
+	      </p>
+	    </div><br>
+	    
+	  </div>
+	</div>
+	
+	
+	</body>
 </html>
